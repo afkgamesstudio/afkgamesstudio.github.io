@@ -5,55 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Third-Party Notices - XO Arcade: Infinity Edition | AFK GAMES STUDIO</title>
     <style>
-        :root { --primary-color: #2b6cb0; --text-color: #1a202c; --bg-color: #ffffff; --box-bg: #f7fafc; }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-color); max-width: 850px; margin: 0 auto; padding: 40px 20px; background: var(--bg-color); }
-        .legal-wrapper { border-top: 6px solid var(--primary-color); padding-top: 30px; }
-        h1 { font-size: 2rem; color: var(--text-color); text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 5px; text-align: center; }
-        h2 { font-size: 1.25rem; color: var(--primary-color); border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; margin-top: 40px; text-transform: uppercase; }
-        p, li { margin-bottom: 15px; text-align: justify; }
-        .date-badge { display: block; text-align: center; background: var(--box-bg); padding: 5px 15px; border-radius: 4px; font-size: 0.9rem; color: #718096; margin-bottom: 40px; }
-        .asset-item { background: var(--box-bg); padding: 15px; border-radius: 4px; margin-bottom: 10px; border-left: 4px solid var(--primary-color); }
-        footer { margin-top: 60px; padding-top: 20px; border-top: 2px solid #edf2f7; font-size: 0.9rem; color: #4a5568; }
-        a { color: var(--primary-color); text-decoration: none; font-weight: bold; }
+        :root {
+            /* BigLaw "Clean Paper" Palette */
+            --primary: #1e3a8a;       /* Navy Blue Professional */
+            --text-main: #111827;     /* Almost Black */
+            --text-muted: #4b5563;    /* Dark Gray */
+            --bg-body: #ffffff;       /* Pure White */
+            --box-bg: #f9fafb;        /* Light Gray Section */
+            --border: #e5e7eb;        /* Subtle Border */
+            --highlight: #eff6ff;     /* Light Blue Highlight */
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 60px 25px;
+            background: var(--bg-body);
+        }
+        .header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin: 0 0 10px 0;
+            letter-spacing: -0.02em;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+        }
+        .notice-block {
+            background: var(--box-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .asset-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .asset-row:last-child { border-bottom: none; }
+        
+        .asset-name { font-weight: 700; color: #000; }
+        .asset-meta { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+        
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: var(--highlight);
+            color: var(--primary);
+            border: 1px solid #bfdbfe;
+            margin-left: 10px;
+        }
+
+        .apache-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #fff;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 12px;
+            margin-top: 20px;
+            border: 1px solid var(--primary);
+            font-weight: 700;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .apache-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        a { color: var(--primary); text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="legal-wrapper">
-        <h1>XO Arcade: Infinity Edition — Third-Party Notices</h1>
-        <div class="date-badge">Last Updated: February 13, 2026</div>
-
-        <section>
-            <p>This notice applies to <strong>XO Arcade: Infinity Edition</strong> (the “App”), developed by <strong>AFK GAMES STUDIO</strong>. The App incorporates certain third-party assets and services. Applicable third-party terms, licenses, and notices may impose additional conditions.</p>
-        </section>
-
-        <section>
-            <h2>Third-Party Asset Notices (incorporated by reference)</h2>
-            <div class="asset-item">
-                <strong>1) Kenney:</strong> Sound effects; CC0 (KENNEY_NOTICES.txt)
-            </div>
-            <div class="asset-item">
-                <strong>2) Suno:</strong> Generated music; Commercial License (SUNO_NOTICE.txt)
-            </div>
-            <div class="asset-item">
-                <strong>3) ElevenLabs:</strong> Generated voice/SFX; Commercial License (ELEVENLABS_NOTICE.txt)
-            </div>
-        </section>
-
-        <section>
-            <h2>Third-Party Services (incorporated by reference)</h2>
-            <p><strong>Google AdMob:</strong> Google Mobile Ads SDK (AD_SERVICES_NOTICE.txt)</p>
-        </section>
-
-        <section>
-            <h2>Privacy & Legal</h2>
-            <p>For detailed information regarding data practices, refer to the App’s <a href="privacy-policy.html">Privacy Policy</a>. Use of this App is governed by our <a href="terms-of-use.html">Terms of Service</a>.</p>
-        </section>
-
-        <footer>
-            <strong>Contact</strong><br>
-            AFK GAMES STUDIO<br>
-            Support: <a href="mailto:afkstudios.dev@gmail.com">afkstudios.dev@gmail.com</a>
-        </footer>
+    <div class="header">
+        <h1>Third-Party Notices</h1>
+        <div class="meta">XO Arcade: Infinity Edition | Last Updated: February 14, 2026</div>
     </div>
+
+    <p>This notice applies to <strong>XO Arcade: Infinity Edition</strong> (the “App”), developed by <strong>AFK GAMES STUDIO</strong>. The App incorporates certain third-party software and creative assets. Applicable third-party terms, licenses, and notices are provided below for statutory compliance.</p>
+
+    <h2>1. Open Source Software (Apache License 2.0)</h2>
+    <div class="notice-block">
+        <div class="asset-row">
+            <span class="asset-name">AndroidX Jetpack Suite</span>
+            <span class="asset-meta">Core, Lifecycle, Navigation, Splashscreen <span class="badge">Apache 2.0</span></span>
+        </div>
+        <div class="asset-row">
+            <span class="asset-name">Jetpack Compose UI</span>
+            <span class="asset-meta">UI, Material3, Animation, Graphics <span class="badge">Apache 2.0</span></span>
+        </div>
+        <div class="asset-row">
+            <span class="asset-name">Kotlin Standard Library</span>
+            <span class="asset-meta">JetBrains s.r.o. <span class="badge">Apache 2.0</span></span>
+        </div>
+        <div class="asset-row">
+            <span class="asset-name">Material Icons Extended</span>
+            <span class="asset-meta">Google LLC <span class="badge">Apache 2.0</span></span>
+        </div>
+        
+        <a href="apache-2.0.html" class="apache-btn">View Full Apache License 2.0 Text</a>
+    </div>
+
+    <h2>2. Creative Assets (Incorporated by Reference)</h2>
+    <div class="notice-block">
+        <div class="asset-row">
+            <span class="asset-name">Suno AI</span>
+            <span class="asset-meta">Generated Music <span class="badge">Commercial License</span></span>
+        </div>
+        <div class="asset-row">
+            <span class="asset-name">ElevenLabs</span>
+            <span class="asset-meta">Voice Synthesis / SFX <span class="badge">Commercial License</span></span>
+        </div>
+        <div class="asset-row">
+            <span class="asset-name">Kenney Assets</span>
+            <span class="asset-meta">UI Sound Effects <span class="badge">CC0 Public Domain</span></span>
+        </div>
+    </div>
+
+    <h2>3. Proprietary Technology & Services</h2>
+    <div class="notice-block">
+        <div class="asset-row">
+            <span class="asset-name">ZERO Protocol AI</span>
+            <span class="asset-meta">Offline Logic Engine <span class="badge">Copyright AFK</span></span>
+        </div>
+        <div class="asset-row">
+            <span class="asset-name">Google AdMob SDK</span>
+            <span class="asset-meta">Advertising Services <span class="badge">Google Terms</span></span>
+        </div>
+    </div>
+
+    <footer>
+        <strong>AFK GAMES STUDIO</strong><br>
+        Statutory Jurisdiction: Orange County, Florida, USA<br>
+        Contact: <a href="mailto:afkstudios.dev@gmail.com">afkstudios.dev@gmail.com</a>
+    </footer>
 </body>
 </html>
