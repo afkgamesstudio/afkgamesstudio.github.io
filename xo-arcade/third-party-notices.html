@@ -100,7 +100,7 @@
       color:var(--text-muted);
       font-size:0.92rem;
     }
-    .apache-btn{
+    .btn{
       display:block;
       width:100%;
       text-align:center;
@@ -114,7 +114,59 @@
       border-radius:6px;
       transition:background .2s,color .2s;
     }
-    .apache-btn:hover{ background:var(--primary); color:#fff; }
+    .btn:hover{ background:var(--primary); color:#fff; }
+
+    /* New: compact link list inside blocks */
+    .link-list{
+      margin-top:12px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .link-item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      padding:10px 12px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:6px;
+      text-decoration:none;
+    }
+    .link-left{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+    }
+    .link-title{
+      font-weight:800;
+      color:var(--text-main);
+      line-height:1.2;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .link-sub{
+      font-size:0.85rem;
+      color:var(--text-muted);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .link-pill{
+      font-size:0.75rem;
+      font-weight:800;
+      padding:3px 8px;
+      border-radius:999px;
+      border:1px solid #bfdbfe;
+      background:var(--highlight);
+      color:var(--primary);
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
     footer{
       margin-top:72px;
       padding-top:26px;
@@ -179,7 +231,15 @@
       provided in the App’s <strong>Settings/About → Third-Party Notices</strong> section or accompanying license files.
     </div>
 
-    <a href="apache-2.0.html" class="apache-btn">View Full Apache License 2.0 Text</a>
+    <div class="link-list" aria-label="Open source license texts">
+      <a class="link-item" href="apache-2.0.html">
+        <div class="link-left">
+          <div class="link-title">Apache License 2.0 (Full Text)</div>
+          <div class="link-sub">License text for Apache 2.0 components</div>
+        </div>
+        <div class="link-pill">OPEN</div>
+      </a>
+    </div>
   </div>
 
   <h2>2. Creative Assets & Synthetic Media</h2>
@@ -202,6 +262,33 @@
       license to extract, redistribute, or commercially exploit these assets outside the App, except as permitted by applicable law and
       as described in the App’s <a href="terms-of-service.html">Terms of Service</a>.
     </div>
+
+    <!-- NEW: Notice links -->
+    <div class="link-list" aria-label="Creative and AI media notices">
+      <a class="link-item" href="kenney-notice.html">
+        <div class="link-left">
+          <div class="link-title">Kenney.nl Notice (CC0 1.0)</div>
+          <div class="link-sub">Sound effects packs and CC0 license reference</div>
+        </div>
+        <div class="link-pill">OPEN</div>
+      </a>
+
+      <a class="link-item" href="suno-notice.html">
+        <div class="link-left">
+          <div class="link-title">Suno Notice (Generated Music)</div>
+          <div class="link-sub">Commercial license provenance and usage limits</div>
+        </div>
+        <div class="link-pill">OPEN</div>
+      </a>
+
+      <a class="link-item" href="elevenlabs-notice.html">
+        <div class="link-left">
+          <div class="link-title">ElevenLabs Notice (Generated Voice / SFX)</div>
+          <div class="link-sub">Terms links and good-faith provenance statement</div>
+        </div>
+        <div class="link-pill">OPEN</div>
+      </a>
+    </div>
   </div>
 
   <h2>3. Third-Party Services & SDKs</h2>
@@ -219,6 +306,17 @@
       Use of third-party services is subject to their providers’ terms and privacy policies. Data and consent-related disclosures for
       advertising identifiers and diagnostics are described in the App’s <a href="privacy-policy.html">Privacy Policy</a>.
     </div>
+
+    <!-- NEW: Service notice link -->
+    <div class="link-list" aria-label="Service notices">
+      <a class="link-item" href="admob-notice.html">
+        <div class="link-left">
+          <div class="link-title">Google AdMob Notice</div>
+          <div class="link-sub">Data handling, consent choices, and policy references</div>
+        </div>
+        <div class="link-pill">OPEN</div>
+      </a>
+    </div>
   </div>
 
   <footer>
@@ -227,3 +325,4 @@
   </footer>
 </body>
 </html>
+
