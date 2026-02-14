@@ -1,44 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Third-Party Notices - Tap Odyssey | AFK GAMES STUDIO</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #2d3748; max-width: 800px; margin: 0 auto; padding: 40px; background: #fff; }
-        h1 { border-bottom: 2px solid #cbd5e0; padding-bottom: 10px; color: #1a202c; font-size: 1.5rem; }
-        h3 { margin-top: 25px; color: #2b6cb0; }
-        .section { margin-bottom: 30px; border-left: 3px solid #e2e8f0; padding-left: 20px; }
-        .date { color: #718096; font-style: italic; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Third-Party Notices - Tap Odyssey | AFK GAMES STUDIO</title>
+  <style>
+    :root{
+      --primary:#1e3a8a;
+      --text-main:#111827;
+      --text-muted:#4b5563;
+      --bg-body:#ffffff;     /* white background for legibility */
+      --surface:#f9fafb;
+      --border:#e5e7eb;
+      --highlight:#eff6ff;
+      --link:#2563eb;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      background:var(--bg-body);
+      color:var(--text-main);
+      font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.6;
+    }
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 22px 80px;
+    }
+    .header{
+      border-bottom: 4px solid var(--primary);
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+    h1{
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 900;
+    }
+    .meta{
+      color: var(--text-muted);
+      font-size: .92rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+    .top-links{
+      margin: 16px 0 26px;
+      color: var(--text-muted);
+      font-size: .98rem;
+    }
+    .top-links a{
+      color: var(--link);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .top-links a:hover{ text-decoration: underline; }
+
+    .card{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .quick{
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .quick h2{
+      margin: 0 0 10px;
+      font-size: 1rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-weight: 900;
+    }
+    .link-list{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .link-item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      padding:10px 12px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:10px;
+      text-decoration:none;
+    }
+    .link-left{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+    }
+    .link-title{
+      font-weight:900;
+      color:var(--text-main);
+      line-height:1.2;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .link-sub{
+      font-size:0.86rem;
+      color:var(--text-muted);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .pill{
+      font-size:0.75rem;
+      font-weight:900;
+      padding:3px 10px;
+      border-radius:999px;
+      border:1px solid #bfdbfe;
+      background:var(--highlight);
+      color:var(--primary);
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    /* Verbatim document block (1:1) */
+    .doc{
+      margin-top: 14px;
+      background:#ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      color: var(--text-main);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      white-space: pre-wrap;   /* preserve line breaks, allow wrapping */
+      word-break: break-word;  /* prevent overflow on long lines */
+    }
+
+    a{ color: var(--link); }
+  </style>
 </head>
+
 <body>
-    <h1>TAP ODYSSEY — THIRD-PARTY NOTICES</h1>
-    <p class="date">Last Updated: February 13, 2026</p>
-    
-    <div class="section">
-        <p>This notice applies to Tap Odyssey (the “App”), developed by AFK GAMES STUDIO. The App incorporates certain third-party assets and services. Applicable third-party terms, licenses, and notices may impose additional conditions. These materials are incorporated by reference and form part of the App’s legal notices.</p>
+  <div class="wrap">
+    <div class="header">
+      <h1>Third-Party Notices</h1>
+      <div class="meta">Tap Odyssey | Last Updated: February 13, 2026</div>
     </div>
 
-    <h3>Third-Party Asset Notices (incorporated by reference)</h3>
-    <ul>
-        <li><strong>Pixabay (sound effects)</strong> — PIXABAY_NOTICE.txt</li>
-        <li><strong>Suno (generated music)</strong> — SUNO_NOTICE.txt</li>
-        <li><strong>OpenAI / ChatGPT (generated visual assets)</strong> — OPENAI_CHATGPT_NOTICE.txt</li>
-    </ul>
+    <div class="top-links">
+      <a href="terms-of-use.html">Terms of Service</a>
+      &nbsp;•&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;•&nbsp;
+      <a href="third-party-notices.html">Third-Party Notices</a>
+    </div>
 
-    <h3>Third-Party Services (incorporated by reference)</h3>
-    <p><strong>Google AdMob (Google Mobile Ads SDK)</strong> — AD_SERVICES_NOTICE.txt</p>
+    <div class="card">
+      <div class="quick" aria-label="Quick links">
+        <h2>Notices & License Texts</h2>
+        <div class="link-list">
+          <a class="link-item" href="apache-2.0.html">
+            <div class="link-left">
+              <div class="link-title">Apache License 2.0 (Full Text)</div>
+              <div class="link-sub">Full license text referenced in Section 1.3</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
 
-    <h3>Privacy</h3>
-    <p>For information regarding advertising-related disclosures and data practices associated with third-party services, please refer to the App’s Privacy Policy (available within the App and/or via the App’s store listing).</p>
+          <a class="link-item" href="pixabay-notice.html">
+            <div class="link-left">
+              <div class="link-title">Pixabay Notice (Sound Effects)</div>
+              <div class="link-sub">Pixabay Content License, scope of use, no-endorsement</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
 
-    <hr>
-    <h3>Contact</h3>
-    <p>
-        AFK GAMES STUDIO<br>
-        Support: afkstudios.dev@gmail.com
-    </p>
+          <a class="link-item" href="suno-notice.html">
+            <div class="link-left">
+              <div class="link-title">Suno Notice (Generated Music)</div>
+              <div class="link-sub">Commercial plan provenance + no-endorsement</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+
+          <a class="link-item" href="openai-notice.html">
+            <div class="link-left">
+              <div class="link-title">OpenAI / ChatGPT Notice (Generated Visual Assets)</div>
+              <div class="link-sub">Ownership/assignment, no-endorsement, policy references</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+
+          <a class="link-item" href="admob-notice.html">
+            <div class="link-left">
+              <div class="link-title">Google AdMob Notice</div>
+              <div class="link-sub">Data handling, consent choices, policy references</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 1:1 VERBATIM COPY (matches your offline TXT) -->
+      <pre class="doc">TAP ODYSSEY — THIRD-PARTY NOTICES
+Last Updated: February 13, 2026
+
+SCOPE
+This Third-Party Notices document applies to Tap Odyssey (the “App”), developed and distributed by AFK GAMES STUDIO (“Studio”).
+It identifies third-party open source software, third-party services/SDKs, and certain third-party or licensed creative assets included in or used by the App.
+
+These notices are provided for attribution and statutory compliance only. They do not modify the App’s Terms of Service or Privacy Policy.
+Privacy-related disclosures for third-party SDKs (e.g., advertising identifiers and diagnostics) are described in the Privacy Policy.
+
+LOCATION / AVAILABILITY
+This notice is provided in-app (Settings/About → Third-Party Notices) and may also be available on the Studio website.
+If a web copy differs from this in-app copy, the in-app copy controls for the App build you installed.
+
+=======================================================================
+1. OPEN SOURCE SOFTWARE
+=======================================================================
+
+1.1 Summary
+The App includes open source components. Each component is governed by its own license terms.
+In the event of a conflict between this notice and an applicable open source license, the open source license controls solely with respect to that component.
+
+1.2 Apache License 2.0 Components (Non-Exhaustive)
+The following components are licensed under the Apache License, Version 2.0 (including common Android/Jetpack libraries used by the App):
+
+- AndroidX Libraries (Core KTX, Lifecycle, Navigation, Splashscreen, DataStore)
+  Copyright (c) The Android Open Source Project
+
+- Jetpack Compose (BOM, UI, Material3, Foundation, Animation, Tooling/Preview)
+  Copyright (c) The Android Open Source Project
+
+- Kotlin Standard Library
+  Copyright (c) JetBrains s.r.o.
+
+- Material Components for Android
+  Copyright (c) Google LLC
+
+- Material Icons Extended (Compose)
+  Copyright (c) Google LLC
+
+NOTE ON COMPLETENESS: This list is intended to cover the primary Apache 2.0 components used by the App.
+The App may also include additional open source libraries and transitive dependencies that carry their own licenses.
+Where included, license texts and attributions for such components are provided in the same “Third-Party Notices” section or in an accompanying licenses file/package.
+
+1.3 Apache License 2.0 — License Text
+The full text of the Apache License, Version 2.0 is provided within the App and/or distributed with the App (e.g., LICENSE_APACHE_2.0.txt and/or apache-2.0.html).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+=======================================================================
+2. CREATIVE ASSETS & SYNTHETIC MEDIA
+=======================================================================
+
+2.1 Pixabay Assets (Sound Effects)
+- Pixabay (Sound Effects / UI & Gameplay SFX)
+  License: Pixabay Content License (subject to Pixabay Terms of Service and policies)
+  Source: https://pixabay.com/
+  Additional Notice: PIXABAY_NOTICE.txt (included in the App distribution / project)
+
+2.2 AI-Generated / Licensed Media
+The App may incorporate visual and/or audio assets generated using third-party AI tools and services.
+These assets are used under paid/commercial subscriptions held by the Studio. Users receive no license to extract, redistribute, or commercially exploit these assets outside the App, except as permitted by applicable law and as described in the App’s Terms of Service.
+
+- Suno (Generated Music)
+  License: Commercial subscription/plan held by AFK GAMES STUDIO
+  Additional Notice: SUNO_NOTICE.txt (included in the App distribution / project)
+
+- OpenAI / ChatGPT (Generated Visual Assets)
+  License: Paid subscription plan held by AFK GAMES STUDIO (OpenAI services for individuals)
+  Additional Notice: OPENAI_CHATGPT_NOTICE.txt (included in the App distribution / project)
+
+=======================================================================
+3. THIRD-PARTY SERVICES & SDKs
+=======================================================================
+
+3.1 Google AdMob / Google Mobile Ads SDK
+- Service: Google AdMob (Advertising SDK)
+- Provider: Google LLC
+- Terms/Policies: Use of this SDK is subject to Google’s applicable terms and policies.
+- Data/Privacy: Advertising-related identifiers, device signals, diagnostics, and related data may be processed by Google as described in the App’s Privacy Policy and Google’s policies.
+- Additional Notice: AD_SERVICES_NOTICE.txt (included in the App distribution / project)
+
+3.2 Google User Messaging Platform (UMP)
+- Service: Google User Messaging Platform (Consent/Privacy Options flow)
+- Provider: Google LLC
+- Terms/Policies: Use is subject to Google’s applicable terms and policies.
+- Data/Privacy: Consent and related device/technical signals may be processed as described in the App’s Privacy Policy and Google’s policies.
+
+3.3 Google Play Services
+- Service: Google Play Services (Platform services/SDK)
+- Provider: Google LLC
+- Terms/Policies: Use is subject to Google’s applicable terms and policies.
+- Data/Privacy: Certain device/technical information may be processed as described in the App’s Privacy Policy and Google’s policies.
+
+=======================================================================
+PRIVACY & SUPPORT
+=======================================================================
+
+Privacy Policy
+For information on data practices, identifiers, consent controls, and user choices (including UMP/Privacy Options where available), refer to the App’s Privacy Policy.
+
+Support / Contact
+AFK GAMES STUDIO
+Support: afkstudios.dev@gmail.com</pre>
+    </div>
+  </div>
 </body>
 </html>
