@@ -9,116 +9,80 @@
       --primary:#1e3a8a;
       --text-main:#111827;
       --text-muted:#4b5563;
-      --bg-body:#ffffff;
-      --box-bg:#f9fafb;
+      --bg-body:#ffffff;     /* white background for legibility */
+      --surface:#f9fafb;
       --border:#e5e7eb;
       --highlight:#eff6ff;
+      --link:#2563eb;
     }
+    *{ box-sizing:border-box; }
     body{
-      font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.6;
-      color:var(--text-main);
-      max-width:850px;
-      margin:0 auto;
-      padding:60px 25px;
+      margin:0;
       background:var(--bg-body);
+      color:var(--text-main);
+      font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.6;
+    }
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 22px 80px;
     }
     .header{
-      border-bottom:3px solid var(--primary);
-      padding-bottom:25px;
-      margin-bottom:26px;
+      border-bottom: 4px solid var(--primary);
+      padding-bottom: 18px;
+      margin-bottom: 18px;
     }
     h1{
-      font-size:1.8rem;
-      text-transform:uppercase;
-      color:var(--primary);
-      margin:0 0 10px 0;
-      letter-spacing:-0.02em;
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 900;
     }
     .meta{
-      color:var(--text-muted);
-      font-size:0.9rem;
-      font-weight:600;
-      text-transform:uppercase;
-      letter-spacing:0.03em;
+      color: var(--text-muted);
+      font-size: .92rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .06em;
     }
     .top-links{
-      margin:14px 0 26px;
-      color:var(--text-muted);
-      font-size:0.95rem;
+      margin: 16px 0 26px;
+      color: var(--text-muted);
+      font-size: .98rem;
     }
-    .top-links a{ color:var(--primary); text-decoration:none; font-weight:700; }
-    .top-links a:hover{ text-decoration:underline; }
-    h2{
-      font-size:1.05rem;
-      color:var(--text-main);
-      border-bottom:1px solid var(--border);
-      padding-bottom:10px;
-      margin-top:44px;
-      margin-bottom:18px;
-      text-transform:uppercase;
-      font-weight:800;
-      letter-spacing:0.05em;
+    .top-links a{
+      color: var(--link);
+      font-weight: 800;
+      text-decoration: none;
     }
-    p,li{ margin-bottom:12px; text-align:justify; }
-    ul{ padding-left:20px; }
-    .notice-block{
-      background:var(--box-bg);
-      border:1px solid var(--border);
-      border-radius:6px;
-      padding:18px;
-      margin-bottom:18px;
-    }
-    .asset-row{
-      display:flex;
-      justify-content:space-between;
-      align-items:baseline;
-      gap:16px;
-      padding:8px 0;
-      border-bottom:1px solid #e5e7eb;
-    }
-    .asset-row:last-child{ border-bottom:none; }
-    .asset-name{ font-weight:800; color:#000; }
-    .asset-meta{ font-size:0.85rem; color:var(--text-muted); text-align:right; }
-    .badge{
-      display:inline-block;
-      font-size:0.75rem;
-      padding:2px 6px;
-      border-radius:3px;
-      background:var(--highlight);
-      color:var(--primary);
-      border:1px solid #bfdbfe;
-      margin-left:10px;
-      white-space:nowrap;
-    }
-    .note{
-      margin-top:14px;
-      padding:14px;
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:6px;
-      color:var(--text-muted);
-      font-size:0.92rem;
-    }
-    .btn{
-      display:block;
-      width:100%;
-      text-align:center;
-      background:#fff;
-      color:var(--primary);
-      text-decoration:none;
-      padding:12px;
-      margin-top:14px;
-      border:1px solid var(--primary);
-      font-weight:800;
-      border-radius:6px;
-      transition:background .2s,color .2s;
-    }
-    .btn:hover{ background:var(--primary); color:#fff; }
+    .top-links a:hover{ text-decoration: underline; }
 
-    /* New: compact link list inside blocks */
+    .card{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .quick{
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .quick h2{
+      margin: 0 0 10px;
+      font-size: 1rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-weight: 900;
+    }
     .link-list{
-      margin-top:12px;
       display:flex;
       flex-direction:column;
       gap:10px;
@@ -131,7 +95,7 @@
       padding:10px 12px;
       background:#fff;
       border:1px solid var(--border);
-      border-radius:6px;
+      border-radius:10px;
       text-decoration:none;
     }
     .link-left{
@@ -141,7 +105,7 @@
       min-width:0;
     }
     .link-title{
-      font-weight:800;
+      font-weight:900;
       color:var(--text-main);
       line-height:1.2;
       white-space:nowrap;
@@ -149,16 +113,16 @@
       text-overflow:ellipsis;
     }
     .link-sub{
-      font-size:0.85rem;
+      font-size:0.86rem;
       color:var(--text-muted);
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
     }
-    .link-pill{
+    .pill{
       font-size:0.75rem;
-      font-weight:800;
-      padding:3px 8px;
+      font-weight:900;
+      padding:3px 10px;
       border-radius:999px;
       border:1px solid #bfdbfe;
       background:var(--highlight);
@@ -167,162 +131,193 @@
       flex:0 0 auto;
     }
 
-    footer{
-      margin-top:72px;
-      padding-top:26px;
-      border-top:1px solid var(--border);
-      text-align:center;
-      font-size:0.85rem;
-      color:var(--text-muted);
+    /* Verbatim document block (1:1) */
+    .doc{
+      margin-top: 14px;
+      background:#ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      color: var(--text-main);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      white-space: pre-wrap;   /* preserve line breaks, allow wrapping */
+      word-break: break-word;  /* prevent overflow on long lines */
     }
-    a{ color:var(--primary); text-decoration:none; font-weight:700; }
-    a:hover{ text-decoration:underline; }
+
+    a{ color: var(--link); }
   </style>
 </head>
 
 <body>
-  <div class="header">
-    <h1>Third-Party Notices</h1>
-    <div class="meta">XO Arcade: Infinity Edition | Last Updated: February 14, 2026</div>
-  </div>
-
-  <div class="top-links">
-    <a href="terms-of-service.html">Terms of Service</a>
-    &nbsp;•&nbsp;
-    <a href="privacy-policy.html">Privacy Policy</a>
-    &nbsp;•&nbsp;
-    <a href="third-party-notices.html">Third-Party Notices</a>
-  </div>
-
-  <p>
-    This notice applies to <strong>XO Arcade: Infinity Edition</strong> (the “App”), developed and distributed by
-    <strong>AFK GAMES STUDIO</strong> (“Studio”). It identifies third-party open source software, third-party services/SDKs,
-    and certain licensed creative assets included in or used by the App. These notices are provided for attribution and statutory
-    compliance only and do not modify the App’s Terms of Service or Privacy Policy.
-  </p>
-
-  <h2>1. Open Source Software</h2>
-  <div class="notice-block">
-    <p>
-      The App includes open source components governed by their respective licenses. In the event of a conflict between this notice
-      and an applicable open source license, the open source license controls solely with respect to the open source component.
-    </p>
-
-    <div class="asset-row">
-      <span class="asset-name">AndroidX Libraries</span>
-      <span class="asset-meta">Core, Lifecycle, Navigation, Splashscreen <span class="badge">Apache 2.0</span></span>
-    </div>
-    <div class="asset-row">
-      <span class="asset-name">Jetpack Compose</span>
-      <span class="asset-meta">UI, Material3, Animation, Tooling <span class="badge">Apache 2.0</span></span>
-    </div>
-    <div class="asset-row">
-      <span class="asset-name">Kotlin Standard Library</span>
-      <span class="asset-meta">JetBrains s.r.o. <span class="badge">Apache 2.0</span></span>
-    </div>
-    <div class="asset-row">
-      <span class="asset-name">Material Design Icons Extended</span>
-      <span class="asset-meta">Google LLC <span class="badge">Apache 2.0</span></span>
+  <div class="wrap">
+    <div class="header">
+      <h1>Third-Party Notices</h1>
+      <div class="meta">XO Arcade: Infinity Edition | Last Updated: February 14, 2026</div>
     </div>
 
-    <div class="note">
-      <strong>Note on completeness:</strong> This page summarizes primary components. Additional open source libraries and transitive
-      dependencies may be included and are governed by their own licenses. Where applicable, the complete list and license texts are
-      provided in the App’s <strong>Settings/About → Third-Party Notices</strong> section or accompanying license files.
+    <div class="top-links">
+      <a href="terms-of-use.html">Terms of Service</a>
+      &nbsp;•&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;•&nbsp;
+      <a href="third-party-notices.html">Third-Party Notices</a>
     </div>
 
-    <div class="link-list" aria-label="Open source license texts">
-      <a class="link-item" href="apache-2.0.html">
-        <div class="link-left">
-          <div class="link-title">Apache License 2.0 (Full Text)</div>
-          <div class="link-sub">License text for Apache 2.0 components</div>
+    <div class="card">
+      <div class="quick" aria-label="Quick links">
+        <h2>Notices & License Texts</h2>
+        <div class="link-list">
+          <a class="link-item" href="apache-2.0.html">
+            <div class="link-left">
+              <div class="link-title">Apache License 2.0 (Full Text)</div>
+              <div class="link-sub">Full license text referenced in Section 1.3</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+
+          <a class="link-item" href="kenney-notice.html">
+            <div class="link-left">
+              <div class="link-title">Kenney.nl Notice (CC0 1.0)</div>
+              <div class="link-sub">Asset packs, CC0 reference, no-endorsement</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+
+          <a class="link-item" href="suno-notice.html">
+            <div class="link-left">
+              <div class="link-title">Suno Notice (Generated Music)</div>
+              <div class="link-sub">Commercial plan provenance + no-endorsement</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+
+          <a class="link-item" href="elevenlabs-notice.html">
+            <div class="link-left">
+              <div class="link-title">ElevenLabs Notice (Generated Voice / SFX)</div>
+              <div class="link-sub">Terms links + good-faith provenance statement</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
+
+          <a class="link-item" href="admob-notice.html">
+            <div class="link-left">
+              <div class="link-title">Google AdMob Notice</div>
+              <div class="link-sub">Data handling, consent choices, policy references</div>
+            </div>
+            <div class="pill">OPEN</div>
+          </a>
         </div>
-        <div class="link-pill">OPEN</div>
-      </a>
+      </div>
+
+      <!-- 1:1 VERBATIM COPY (matches your offline TXT) -->
+      <pre class="doc">XO ARCADE: INFINITY EDITION — THIRD-PARTY NOTICES
+Last Updated: February 14, 2026
+
+SCOPE
+This Third-Party Notices document applies to XO Arcade: Infinity Edition (the “App”), developed and distributed by AFK GAMES STUDIO (“Studio”).
+It identifies third-party open source software, third-party services/SDKs, and certain third-party or licensed creative assets included in or used by the App.
+
+These notices are provided for attribution and statutory compliance only. They do not modify the App’s Terms of Service or Privacy Policy.
+Privacy-related disclosures for third-party SDKs (e.g., advertising identifiers and diagnostics) are described in the Privacy Policy.
+
+LOCATION / AVAILABILITY
+This notice is provided in-app (Settings/About → Third-Party Notices) and may also be available on the Studio website.
+If a web copy differs from this in-app copy, the in-app copy controls for the App build you installed.
+
+=======================================================================
+1. OPEN SOURCE SOFTWARE
+=======================================================================
+
+1.1 Summary
+The App includes open source components. Each component is governed by its own license terms.
+In the event of a conflict between this notice and an applicable open source license, the open source license controls solely with respect to that component.
+
+1.2 Apache License 2.0 Components (Non-Exhaustive)
+The following components are licensed under the Apache License, Version 2.0:
+
+- AndroidX Libraries (Core, Lifecycle, Navigation, Splashscreen)
+  Copyright (c) The Android Open Source Project
+
+- Jetpack Compose (UI, Material3, Animation, Tooling)
+  Copyright (c) The Android Open Source Project
+
+- Kotlin Standard Library
+  Copyright (c) JetBrains s.r.o.
+
+- Material Design Icons Extended
+  Copyright (c) Google LLC
+
+NOTE ON COMPLETENESS: This list is intended to cover the primary Apache 2.0 components used by the App.
+The App may also include additional open source libraries and transitive dependencies that carry their own licenses.
+Where included, license texts and attributions for such components are provided in the same “Third-Party Notices” section or in an accompanying licenses file/package.
+
+1.3 Apache License 2.0 — License Text
+The full text of the Apache License, Version 2.0 is provided within the App and/or distributed with the App (e.g., LICENSE_APACHE_2.0.txt).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+=======================================================================
+2. CREATIVE ASSETS & SYNTHETIC MEDIA
+=======================================================================
+
+2.1 Kenney Assets
+- Kenney (Sound Effects / UI SFX)
+  License: CC0 1.0 Universal (Public Domain)
+  Source: https://kenney.nl/
+  Attribution: Not required (CC0), but included here for clarity.
+
+2.2 AI-Generated / Licensed Media
+The App may incorporate audio and/or voice assets generated using third-party AI tools.
+These assets are used under commercial licenses held by the Studio. Users receive no license to extract, redistribute, or commercially exploit these assets outside the App, except as permitted by applicable law and as described in the App’s Terms of Service.
+
+- Suno (Generated Music)
+  License: Commercial license held by AFK GAMES STUDIO
+  Additional Notice: SUNO_NOTICE.txt (included in the App distribution / project)
+
+- ElevenLabs (Generated Voice / SFX)
+  License: Commercial license held by AFK GAMES STUDIO
+  Additional Notice: ELEVENLABS_NOTICE.txt (included in the App distribution / project)
+
+=======================================================================
+3. THIRD-PARTY SERVICES & SDKs
+=======================================================================
+
+3.1 Google AdMob / Google Mobile Ads SDK
+- Service: Google AdMob (Advertising SDK)
+- Provider: Google LLC
+- Terms/Policies: Use of this SDK is subject to Google’s applicable terms and policies.
+- Data/Privacy: Advertising-related identifiers, device signals, and diagnostics may be processed by Google as described in the App’s Privacy Policy and Google’s policies.
+
+3.2 Google Play Services
+- Service: Google Play Services (Platform services/SDK)
+- Provider: Google LLC
+- Terms/Policies: Use is subject to Google’s applicable terms and policies.
+- Data/Privacy: Certain device/technical information may be processed as described in the App’s Privacy Policy and Google’s policies.
+
+=======================================================================
+PRIVACY & SUPPORT
+=======================================================================
+
+Privacy Policy
+For information on data practices, identifiers, consent controls, and user choices (including UMP/Privacy Options where available), refer to the App’s Privacy Policy.
+
+Support / Contact
+AFK GAMES STUDIO
+Support: afkstudios.dev@gmail.com</pre>
     </div>
   </div>
-
-  <h2>2. Creative Assets & Synthetic Media</h2>
-  <div class="notice-block">
-    <div class="asset-row">
-      <span class="asset-name">Kenney (Sound Effects / UI SFX)</span>
-      <span class="asset-meta">CC0 1.0 Universal (Public Domain) <span class="badge">CC0</span></span>
-    </div>
-    <div class="asset-row">
-      <span class="asset-name">Suno (Generated Music)</span>
-      <span class="asset-meta">Commercial license held by the Studio <span class="badge">Commercial</span></span>
-    </div>
-    <div class="asset-row">
-      <span class="asset-name">ElevenLabs (Generated Voice / SFX)</span>
-      <span class="asset-meta">Commercial license held by the Studio <span class="badge">Commercial</span></span>
-    </div>
-
-    <div class="note">
-      AI-generated and licensed media are used under commercial licenses held by <strong>AFK GAMES STUDIO</strong>. Users receive no
-      license to extract, redistribute, or commercially exploit these assets outside the App, except as permitted by applicable law and
-      as described in the App’s <a href="terms-of-service.html">Terms of Service</a>.
-    </div>
-
-    <!-- NEW: Notice links -->
-    <div class="link-list" aria-label="Creative and AI media notices">
-      <a class="link-item" href="kenney-notice.html">
-        <div class="link-left">
-          <div class="link-title">Kenney.nl Notice (CC0 1.0)</div>
-          <div class="link-sub">Sound effects packs and CC0 license reference</div>
-        </div>
-        <div class="link-pill">OPEN</div>
-      </a>
-
-      <a class="link-item" href="suno-notice.html">
-        <div class="link-left">
-          <div class="link-title">Suno Notice (Generated Music)</div>
-          <div class="link-sub">Commercial license provenance and usage limits</div>
-        </div>
-        <div class="link-pill">OPEN</div>
-      </a>
-
-      <a class="link-item" href="elevenlabs-notice.html">
-        <div class="link-left">
-          <div class="link-title">ElevenLabs Notice (Generated Voice / SFX)</div>
-          <div class="link-sub">Terms links and good-faith provenance statement</div>
-        </div>
-        <div class="link-pill">OPEN</div>
-      </a>
-    </div>
-  </div>
-
-  <h2>3. Third-Party Services & SDKs</h2>
-  <div class="notice-block">
-    <div class="asset-row">
-      <span class="asset-name">Google AdMob / Google Mobile Ads SDK</span>
-      <span class="asset-meta">Advertising, measurement, fraud prevention <span class="badge">Google Terms</span></span>
-    </div>
-    <div class="asset-row">
-      <span class="asset-name">Google Play Services</span>
-      <span class="asset-meta">Platform services/SDK <span class="badge">Google Terms</span></span>
-    </div>
-
-    <div class="note">
-      Use of third-party services is subject to their providers’ terms and privacy policies. Data and consent-related disclosures for
-      advertising identifiers and diagnostics are described in the App’s <a href="privacy-policy.html">Privacy Policy</a>.
-    </div>
-
-    <!-- NEW: Service notice link -->
-    <div class="link-list" aria-label="Service notices">
-      <a class="link-item" href="admob-notice.html">
-        <div class="link-left">
-          <div class="link-title">Google AdMob Notice</div>
-          <div class="link-sub">Data handling, consent choices, and policy references</div>
-        </div>
-        <div class="link-pill">OPEN</div>
-      </a>
-    </div>
-  </div>
-
-  <footer>
-    <strong>AFK GAMES STUDIO</strong><br />
-    Support: <a href="mailto:afkstudios.dev@gmail.com">afkstudios.dev@gmail.com</a>
-  </footer>
 </body>
 </html>
 
