@@ -1,75 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - XO Arcade: Infinity Edition | AFK GAMES STUDIO</title>
-    <style>
-        :root { --primary-color: #2b6cb0; --text-color: #1a202c; --bg-color: #ffffff; --box-bg: #f7fafc; }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text-color); max-width: 850px; margin: 0 auto; padding: 40px 20px; background: var(--bg-color); }
-        .legal-wrapper { border-top: 6px solid var(--primary-color); padding-top: 30px; }
-        h1 { font-size: 2rem; color: var(--text-color); text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 5px; }
-        h2 { font-size: 1.25rem; color: var(--primary-color); border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; margin-top: 40px; text-transform: uppercase; }
-        p, li { margin-bottom: 15px; text-align: justify; }
-        .date-badge { display: inline-block; background: var(--box-bg); padding: 5px 15px; border-radius: 4px; font-size: 0.9rem; color: #718096; margin-bottom: 40px; }
-        .ai-disclosure { background: #f0f5ff; border-left: 4px solid var(--primary-color); padding: 20px; margin: 30px 0; }
-        footer { margin-top: 60px; padding-top: 20px; border-top: 2px solid #edf2f7; font-size: 0.9rem; color: #4a5568; }
-        a { color: var(--primary-color); text-decoration: none; font-weight: bold; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - XO Arcade: Infinity Edition | AFK GAMES STUDIO</title>
+  <style>
+    :root {
+      --primary-color: #2b6cb0;
+      --text-color: #1a202c;
+      --bg-color: #ffffff;
+      --box-bg: #f7fafc;
+      --border: #e2e8f0;
+      --muted: #718096;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-color);
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: var(--bg-color);
+    }
+    .legal-wrapper { border-top: 6px solid var(--primary-color); padding-top: 30px; }
+    h1 {
+      font-size: 2rem;
+      color: var(--text-color);
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .top-links {
+      margin: 8px 0 18px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .top-links a { color: var(--primary-color); text-decoration: none; font-weight: 700; }
+    .top-links a:hover { text-decoration: underline; }
+    .date-badge {
+      display: inline-block;
+      background: var(--box-bg);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      border: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 40px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    h3 {
+      font-size: 1rem;
+      color: var(--text-color);
+      margin-top: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    p, li { margin-bottom: 14px; text-align: justify; }
+    ul { padding-left: 20px; }
+    .info-box {
+      background: #f0f5ff;
+      border-left: 4px solid var(--primary-color);
+      padding: 18px 18px;
+      margin: 22px 0;
+    }
+    a { color: var(--primary-color); text-decoration: none; font-weight: 700; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 2px solid #edf2f7;
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+    .muted { color: var(--muted); }
+  </style>
 </head>
+
 <body>
-    <div class="legal-wrapper">
-        <h1>Privacy Policy</h1>
-        <div class="date-badge">Effective Date: February 13, 2026</div>
+  <div class="legal-wrapper">
+    <h1>Privacy Policy</h1>
 
-        <section>
-            <h2>1. Corporate Declaration</h2>
-            <p><strong>AFK GAMES STUDIO</strong> ("we," "our," or "us") operates the mobile game <strong>XO Arcade: Infinity Edition</strong> (the "Service"). We adhere to a strict <strong>Data Minimization Protocol</strong>; we do not require user account registration and do not directly collect, store, or solicit Personally Identifiable Information (PII) such as legal names, physical addresses, or contact credentials.</p>
-        </section>
-
-        <section>
-            <h2>2. Local Data Processing (ZERO Protocol)</h2>
-            <p>The Service is engineered as a primary offline experience. To facilitate core gameplay, specific telemetry is stored exclusively on the user’s device and is <strong>not transmitted</strong> to Studio-operated servers. This includes:</p>
-            <ul>
-                <li><strong>Game State:</strong> Local progress, settings, and gameplay statistics.</li>
-                <li><strong>ZERO Protocol:</strong> AI/CPU learning telemetry. This data is <strong>non-biometric</strong>, processed locally, and intended solely for enhancing CPU difficulty through internal algorithmic adjustments.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>3. Automated Third-Party Processing</h2>
-            <p>To facilitate monetization and diagnostics, the Service utilizes <strong>Google AdMob</strong> and <strong>Google Play Services</strong>. These partners may automatically ingest:</p>
-            <ul>
-                <li><strong>Persistent Identifiers:</strong> Google Advertising ID (GAID), IP addresses, and device metadata.</li>
-                <li><strong>Technical Telemetry:</strong> Hardware specifications, Android OS version, and runtime diagnostics.</li>
-            </ul>
-            <p>Users may exercise their right to limit tracking via Android System Settings (<em>Settings > Google > Ads</em>).</p>
-        </section>
-
-        <section>
-            <div class="ai-disclosure">
-                <h2>4. Synthetic Media Disclosure</h2>
-                <p>The Service incorporates assets generated via advanced AI technologies, including <strong>ElevenLabs</strong> (voice synthesis) and <strong>Suno AI</strong> (musical compositions). These assets are utilized under valid commercial licenses held by AFK GAMES STUDIO. These technologies do not collect user telemetry through the Service interface.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>5. Global Regulatory Compliance</h2>
-            <p><strong>COPPA (US):</strong> The Service is intended for a general audience and is not directed to children under 13.</p>
-            <p><strong>GDPR (EEA/UK):</strong> Processing of automated technical data is based on our <strong>Legitimate Interest</strong> in providing a secure and monetized service. Consent management is facilitated via the Google UMP flow.</p>
-            <p><strong>CCPA (California):</strong> We do not “sell” personal information as defined by statutory law.</p>
-        </section>
-
-        <section>
-            <h2>6. Governing Law & Jurisdiction</h2>
-            <p>This Privacy Policy is governed by the laws of the <strong>State of Florida, USA</strong>. Any disputes arising from these data practices shall be subject to the exclusive jurisdiction of the state and federal courts located in <strong>Orange County, Florida</strong>.</p>
-        </section>
-
-        <footer>
-            <strong>Corporate Contact:</strong><br>
-            AFK GAMES STUDIO<br>
-            Email: <a href="mailto:afkstudios.dev@gmail.com">afkstudios.dev@gmail.com</a>
-        </footer>
+    <div class="top-links">
+      <a href="terms-of-service.html">Terms of Service</a>
+      <span class="muted">•</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
     </div>
+
+    <div class="date-badge">
+      Effective Date: February 13, 2026 &nbsp;•&nbsp; Last Updated: February 13, 2026
+    </div>
+
+    <section id="scope">
+      <h2>1. Scope; Entity; Roles</h2>
+      <p>
+        This Privacy Policy describes how <strong>AFK GAMES STUDIO</strong> (“Studio,” “we,” “us,” or “our”) processes
+        information in connection with the mobile application <strong>XO Arcade: Infinity Edition</strong> (the “App”).
+      </p>
+      <p>
+        The App is designed as an <strong>offline-first</strong> experience. We do not require account registration,
+        and we do not directly request or collect information such as legal names, physical addresses, or account credentials.
+      </p>
+      <p>
+        However, the App uses third-party SDKs (including <strong>Google AdMob</strong> and <strong>Google Play Services</strong>)
+        that may process identifiers and technical information (which may be considered “personal data” or “personal information”
+        under certain laws) as described below.
+      </p>
+    </section>
+
+    <section id="local-data">
+      <h2>2. Information Processed on Your Device (Offline-First)</h2>
+
+      <h3>2.1 Local Game Data</h3>
+      <p>The App stores certain information locally on your device to provide core functionality, including:</p>
+      <ul>
+        <li><strong>Game State:</strong> progress, settings, and gameplay statistics.</li>
+        <li>
+          <strong>ZERO Protocol Data:</strong> gameplay telemetry used to adjust CPU difficulty and gameplay behavior locally.
+          This data is <strong>non-biometric</strong> and processed on-device.
+        </li>
+      </ul>
+
+      <h3>2.2 User Controls (Local Deletion)</h3>
+      <p>
+        You can delete local game data using in-game functions such as <strong>“Wipe Memory”</strong> and/or <strong>“Reset Stats”</strong>.
+        Uninstalling the App typically removes locally stored data, subject to your device and operating system backup settings.
+      </p>
+    </section>
+
+    <section id="third-parties">
+      <h2>3. Information Processed by Third Parties (Automated Collection)</h2>
+      <p>
+        The App integrates third-party SDKs for advertising and platform functionality. These third parties may automatically
+        collect or receive certain information, which may include:
+      </p>
+      <ul>
+        <li><strong>Advertising/Device Identifiers:</strong> Google Advertising ID (or equivalent identifiers), device identifiers, and app instance identifiers.</li>
+        <li><strong>Network/Location Signals:</strong> IP address and approximate location inferred from IP.</li>
+        <li><strong>Device/Technical Data:</strong> device model, hardware/OS version, language, time zone, App version, diagnostics, and performance data.</li>
+        <li><strong>Advertising Data:</strong> ad impressions, clicks, ad interaction events, and anti-fraud signals.</li>
+      </ul>
+      <p>
+        We do not operate our own analytics or advertising servers for these functions; instead, third parties process this information
+        under their own terms and policies and, in some cases, as independent controllers.
+      </p>
+    </section>
+
+    <section id="use">
+      <h2>4. How Information Is Used</h2>
+      <p>We use (or enable third parties to use) information to:</p>
+      <ul>
+        <li>Provide and maintain App functionality (e.g., saving local progress and settings).</li>
+        <li>Improve gameplay experience (e.g., adjusting CPU difficulty using on-device ZERO Protocol data).</li>
+        <li>Display, measure, and optimize ads; prevent fraud and abuse; enforce policy compliance.</li>
+        <li>Maintain security and stability (e.g., troubleshooting, crash/performance diagnostics).</li>
+        <li>Comply with legal obligations.</li>
+      </ul>
+    </section>
+
+    <section id="legal-bases">
+      <h2>5. Legal Bases (EEA/UK)</h2>
+      <p>Where GDPR/UK GDPR applies:</p>
+      <ul>
+        <li>
+          <strong>Consent:</strong> We rely on your consent for personalized advertising where required. Consent choices are managed
+          through the Google User Messaging Platform (UMP) or equivalent in-app consent flow.
+        </li>
+        <li>
+          <strong>Legitimate Interests:</strong> We and/or our partners may process limited technical and security information to provide
+          a secure and stable App, prevent fraud, and measure performance, subject to your rights and applicable law.
+        </li>
+        <li>
+          <strong>Contract Necessity:</strong> Local processing needed to provide the core offline App experience (e.g., saving progress locally).
+        </li>
+      </ul>
+    </section>
+
+    <section id="sharing">
+      <h2>6. Sharing; Third-Party Services; Open Source</h2>
+
+      <h3>6.1 Advertising and Platform Partners</h3>
+      <p>The App may share information with or allow collection by:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> (advertising, measurement, fraud prevention)</li>
+        <li><strong>Google Play Services</strong> (platform services and related functionality)</li>
+      </ul>
+      <p>
+        Your use of these services may be subject to Google’s terms and privacy policies. We are not responsible for third-party services.
+      </p>
+
+      <h3>6.2 Open Source</h3>
+      <p>
+        The App may include open source components governed by their respective licenses. See the App’s <strong>“Third-Party Notices”</strong> section.
+      </p>
+    </section>
+
+    <section id="choices-rights">
+      <h2>7. Your Choices; Privacy Rights</h2>
+
+      <h3>7.1 Consent & Ads Preferences (UMP)</h3>
+      <p>
+        Where available, you can review or change ad consent choices using the in-app <strong>“Privacy Options”</strong> (or equivalent)
+        which surfaces UMP choices.
+      </p>
+
+      <h3>7.2 Device Controls</h3>
+      <p>
+        Depending on your device and region, you may be able to reset or delete your Advertising ID and limit ad personalization through
+        device settings (for example, by searching <strong>“Ads”</strong> or <strong>“Advertising”</strong> in system settings).
+      </p>
+
+      <h3>7.3 California (CCPA/CPRA)</h3>
+      <p>
+        We do not “sell” personal information for money. Depending on how “share” is defined under applicable law, certain advertising-related
+        disclosures may be considered “sharing” for cross-context behavioral advertising. Where required, we provide an option to opt out of such
+        “sale” or “sharing” via in-app <strong>“Privacy Options”</strong> or applicable device settings. California residents may also have rights
+        to access, delete, or correct certain personal information, subject to verification and legal exceptions.
+      </p>
+
+      <h3>7.4 EEA/UK and Other Regions</h3>
+      <p>
+        Subject to applicable law, you may have rights to access, delete, or object to certain processing. To submit a request, contact us as described
+        in Section 12. Please note that we may be unable to access or delete information held by third parties directly; in those cases, you must use
+        the controls provided by the third party or your device settings.
+      </p>
+    </section>
+
+    <section id="retention">
+      <h2>8. Data Retention</h2>
+      <ul>
+        <li><strong>Local Game Data</strong> is retained on your device until you delete it using in-game controls or uninstall the App (subject to OS backups).</li>
+        <li><strong>Third-party data retention</strong> is governed by the third parties’ own policies and settings.</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>9. Children’s Privacy</h2>
+      <p>
+        The App is not directed to children under 13 and we do not knowingly collect personal information from children under 13.
+        If you believe a child has provided information through the App, contact us and we will take appropriate steps consistent with applicable law.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>10. Security</h2>
+      <p>
+        We use reasonable administrative and technical measures designed to protect information. However, no method of transmission or storage is 100% secure.
+      </p>
+    </section>
+
+    <section id="international">
+      <h2>11. International Transfers</h2>
+      <p>
+        If you use the App outside the United States, information processed by third-party partners may be transferred to and processed in countries other than
+        your own, including the United States, subject to the partners’ safeguards and policies and applicable law.
+      </p>
+    </section>
+
+    <section id="disputes">
+      <h2>12. Disputes</h2>
+      <p>
+        Disputes related to the App, including privacy-related disputes, are governed by the App’s <a href="terms-of-service.html">Terms of Service</a>,
+        to the maximum extent permitted by applicable law. Mandatory consumer protection rights remain unaffected.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>13. Contact</h2>
+      <p>
+        <strong>AFK GAMES STUDIO</strong><br />
+        Email: <a href="mailto:afkstudios.dev@gmail.com">afkstudios.dev@gmail.com</a>
+      </p>
+    </section>
+
+    <div class="info-box" id="ai-disclosure">
+      <h2>AI Assets Disclosure</h2>
+      <p>
+        The App may incorporate audio and/or voice assets generated using artificial intelligence tools, including but not limited to
+        <strong>Suno AI</strong> and <strong>ElevenLabs</strong>. These assets are utilized under valid commercial licenses held by AFK GAMES STUDIO.
+        These technologies do not collect user telemetry through the App interface.
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 AFK GAMES STUDIO. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
