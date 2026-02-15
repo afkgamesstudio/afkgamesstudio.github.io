@@ -98,8 +98,8 @@
     }
 
     .logo {
-      /* OPTIMIZED: Professional enterprise scale */
-      height: 72px; 
+      /* UPGRADED: Dominant visual hierarchy */
+      height: 144px; 
       width: auto;
       filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.3));
       transition: transform 0.3s var(--ease-spring), filter 0.3s ease;
@@ -272,7 +272,8 @@
       to { opacity: 0.9; }
     }
 
-    .card:hover .card-banner img { 
+    /* INDEPENDENT: Banner only animates on direct hover */
+    .card-banner:hover img { 
       transform: scale(1.08); 
       opacity: 1; 
     }
@@ -299,7 +300,8 @@
       transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease;
     }
     
-    .card:hover .app-icon { 
+    /* INDEPENDENT: Icon only animates on direct hover */
+    .app-icon:hover { 
       transform: scale(1.05) rotate(-3deg);
       box-shadow: var(--shadow-icon-hover); /* UPGRADED shadow */
     }
@@ -427,7 +429,7 @@
       }
       
       .logo {
-        height: 56px; /* Optimized mobile scale */
+        height: 112px; /* Doubled mobile scale */
       }
 
       .card-header {
