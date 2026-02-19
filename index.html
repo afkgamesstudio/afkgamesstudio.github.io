@@ -408,6 +408,37 @@
       color: #fff;
     }
 
+    /* Coming Soon Badge */
+    .badge-coming-soon {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      border-radius: 100px;
+      margin-left: 12px;
+      vertical-align: middle;
+    }
+
+    /* Disabled legal buttons */
+    .btn-legal--disabled {
+      pointer-events: none;
+      opacity: 0.3;
+      cursor: not-allowed;
+      user-select: none;
+    }
+
+    .btn-legal--disabled:hover {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      transform: none;
+    }
+
     .btn-legal span:last-child {
       opacity: 0;
       transform: translateX(-8px) scale(0.8);
@@ -559,18 +590,18 @@
           >
         </div>
         <div class="card-body">
-          <h2 class="app-title">QR Decoder &amp; Scanner</h2>
+          <h2 class="app-title">QR Decoder &amp; Scanner <span class="badge-coming-soon">Coming Soon</span></h2>
           <p class="app-desc">Offline-first scanning suite with QR scan and generation for WiFi, contacts, and custom payloads. Includes document scanning with automatic edge detection, on-device OCR powered by Google ML Kit, batch scanning for inventory workflows, ID front and back merge into a single organized page, and export to PDF and Word. Built-in file viewer supports PDF, TXT, Word, Excel, PowerPoint, and JSON formats. No cloud uploads, no external servers, and no background data transmission.</p>
           <nav class="legal-stack" aria-label="QR Decoder legal documents">
             <a href="qr-decoder/privacy-policy.html" class="btn-legal">
               <span>Privacy Policy</span><span aria-hidden="true">→</span>
             </a>
-            <a href="qr-decoder/terms-of-use.html" class="btn-legal">
+            <span class="btn-legal btn-legal--disabled" aria-disabled="true">
               <span>Terms of Use</span><span aria-hidden="true">→</span>
-            </a>
-            <a href="qr-decoder/third-party-notices.html" class="btn-legal">
+            </span>
+            <span class="btn-legal btn-legal--disabled" aria-disabled="true">
               <span>Third-Party Notices</span><span aria-hidden="true">→</span>
-            </a>
+            </span>
           </nav>
         </div>
       </article>
@@ -633,18 +664,18 @@
           >
         </div>
         <div class="card-body">
-          <h2 class="app-title">Air Strike Arcade</h2>
+          <h2 class="app-title">Air Strike Arcade <span class="badge-coming-soon">Coming Soon</span></h2>
           <p class="app-desc">Fast-paced neon hockey arcade with local multiplayer and offline-first architecture. No cloud uploads, no external servers, and no background data transmission.</p>
           <nav class="legal-stack" aria-label="Air Strike Arcade legal documents">
             <a href="air-strike-arcade/privacy-policy.html" class="btn-legal">
               <span>Privacy Policy</span><span aria-hidden="true">→</span>
             </a>
-            <a href="air-strike-arcade/terms-of-use.html" class="btn-legal">
+            <span class="btn-legal btn-legal--disabled" aria-disabled="true">
               <span>Terms of Use</span><span aria-hidden="true">→</span>
-            </a>
-            <a href="air-strike-arcade/third-party-notices.html" class="btn-legal">
+            </span>
+            <span class="btn-legal btn-legal--disabled" aria-disabled="true">
               <span>Third-Party Notices</span><span aria-hidden="true">→</span>
-            </a>
+            </span>
           </nav>
         </div>
       </article>
