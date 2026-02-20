@@ -6,115 +6,102 @@
   <title>Suno Notice - XO Arcade: Infinity Edition | AFK GAMES STUDIO</title>
   <style>
     :root{
-      --primary:#1e3a8a;
-      --text-main:#111827;
-      --text-muted:#4b5563;
-      --bg-body:#ffffff;   /* White background for legibility */
-      --box-bg:#f9fafb;
+      --primary:#0f172a;   /* Navy/Slate */
+      --text:#111827;
+      --muted:#4b5563;
+      --bg:#ffffff;        /* White background for legibility */
+      --surface:#f9fafb;
       --border:#e5e7eb;
       --highlight:#eff6ff;
+      --link:#2563eb;
     }
+    *{ box-sizing:border-box; }
     body{
-      font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.6;
-      color:var(--text-main);
-      max-width:850px;
-      margin:0 auto;
-      padding:60px 25px;
-      background:var(--bg-body);
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.65;
+    }
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 22px 80px;
     }
     .header{
-      border-bottom:3px solid var(--primary);
-      padding-bottom:25px;
-      margin-bottom:26px;
+      border-bottom: 4px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 26px;
+      text-align: center;
     }
     h1{
-      font-size:1.8rem;
-      text-transform:uppercase;
-      color:var(--primary);
-      margin:0 0 10px 0;
-      letter-spacing:-0.02em;
+      margin: 0 0 8px;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 900;
     }
     .meta{
-      color:var(--text-muted);
-      font-size:0.9rem;
-      font-weight:600;
-      text-transform:uppercase;
-      letter-spacing:0.03em;
+      color: var(--muted);
+      font-size: .9rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .06em;
     }
-    .top-links{
-      margin:14px 0 26px;
-      color:var(--text-muted);
-      font-size:0.95rem;
+    .card{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
     }
-    .top-links a{ color:var(--primary); text-decoration:none; font-weight:700; }
-    .top-links a:hover{ text-decoration:underline; }
-
     h2{
-      font-size:1.05rem;
-      color:var(--text-main);
-      border-bottom:1px solid var(--border);
-      padding-bottom:10px;
-      margin-top:28px;
-      margin-bottom:14px;
-      text-transform:uppercase;
-      font-weight:800;
-      letter-spacing:0.05em;
+      margin: 22px 0 10px;
+      font-size: 1.05rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      font-weight: 800;
     }
-
-    p,li{ margin:0 0 12px; text-align:justify; }
-    ul{ padding-left:20px; margin:0; }
-
-    .notice-block{
-      background:var(--box-bg);
-      border:1px solid var(--border);
-      border-radius:6px;
-      padding:18px;
+    p{ margin: 0 0 14px; color: var(--muted); }
+    ul{ margin: 0 0 14px; padding-left: 18px; color: var(--muted); }
+    li{ margin: 6px 0; }
+    .notice{
+      border: 2px solid var(--primary);
+      background: var(--highlight);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 18px;
     }
-    .label{
-      display:inline-block;
-      font-size:0.75rem;
-      padding:2px 8px;
-      border-radius:999px;
-      background:var(--highlight);
-      color:var(--primary);
-      border:1px solid #bfdbfe;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:0.04em;
-      margin-bottom:10px;
-    }
-    a{ color:var(--primary); text-decoration:none; font-weight:700; }
-    a:hover{ text-decoration:underline; }
-
+    a{ color: var(--link); font-weight: 700; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
     footer{
-      margin-top:72px;
-      padding-top:26px;
-      border-top:1px solid var(--border);
-      text-align:center;
-      font-size:0.85rem;
-      color:var(--text-muted);
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: .9rem;
+      color: var(--muted);
     }
   </style>
 </head>
-
 <body>
-  <div class="header">
-    <h1>Suno — Generated Music Notice</h1>
-    <div class="meta">XO Arcade: Infinity Edition | Last Updated: February 19, 2026</div>
-  </div>
+  <div class="wrap">
+    <div class="header">
+      <h1>Suno Notice</h1>
+      <div class="meta">XO Arcade: Infinity Edition | AFK GAMES STUDIO</div>
+    </div>
 
-  <div class="top-links">
-    <a href="terms-of-service.html">Terms of Service</a>
-    &nbsp;•&nbsp;
-    <a href="privacy-policy.html">Privacy Policy</a>
-    &nbsp;•&nbsp;
-    <a href="third-party-notices.html">Third-Party Notices</a>
-  </div>
+    <div class="card">
+      <p>
+        This notice applies to <strong>XO Arcade: Infinity Edition</strong> (the "App"), developed by
+        <strong>AFK GAMES STUDIO</strong> ("Studio").
+      </p>
 
-  <div class="notice-block">
-    <div class="label">Notice</div>
-<pre style="white-space:pre-wrap;word-wrap:break-word;font-family:inherit;margin:0;color:var(--text-main);line-height:1.6;">SUNO — GENERATED MUSIC NOTICE
+      <div class="notice">
+<pre style="white-space:pre-wrap;word-wrap:break-word;font-family:inherit;margin:0;color:var(--muted);">SUNO — GENERATED MUSIC NOTICE
 Last Updated: February 19, 2026
 
 The App includes certain music tracks generated using Suno (“Suno”) under a Studio-held commercial subscription/plan in effect at the time of generation.
@@ -140,11 +127,13 @@ File names may have been changed for internal organization; the music content it
 
 Recordkeeping
 This notice is provided for provenance and compliance recordkeeping.</pre>
-  </div>
+      </div>
 
-  <footer>
-    <strong>AFK GAMES STUDIO</strong><br />
-    Support: <a href="mailto:afkgames.helpdesk@gmail.com">afkgames.helpdesk@gmail.com</a>
-  </footer>
+      <footer>
+        <div><strong>AFK GAMES STUDIO</strong></div>
+        <div>Contact: <a href="mailto:afkgames.helpdesk@gmail.com">afkgames.helpdesk@gmail.com</a></div>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
