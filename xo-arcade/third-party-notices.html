@@ -166,6 +166,35 @@
       font-size: .9rem;
       color: var(--muted);
     }
+
+    /* Navigation Bar */
+    .site-nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:center;
+      margin-bottom:26px;
+    }
+    .site-nav a{
+      display:inline-block;
+      padding:8px 18px;
+      font-size:.82rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+      text-decoration:none;
+      border-radius:8px;
+      border:1px solid var(--border);
+      color:var(--muted);
+      background:var(--surface, #f9fafb);
+      transition:background .2s,color .2s,border-color .2s;
+    }
+    .site-nav a:hover{
+      background:var(--highlight, #eff6ff);
+      color:var(--primary, #0f172a);
+      border-color:var(--primary, #0f172a);
+      text-decoration:none;
+    }
   </style>
 </head>
 
@@ -175,6 +204,12 @@
       <h1>Third-Party Notices</h1>
       <div class="meta">XO Arcade: Infinity Edition | AFK GAMES STUDIO</div>
     </div>
+
+    <nav class="site-nav" aria-label="Site navigation">
+      <a href="../index.html">Homepage</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Service</a>
+    </nav>
 
     <div class="card">
       <p>
@@ -187,7 +222,7 @@
         <div class="link-list">
           <a class="link-item" href="apache-2.0.html">
             <div class="link-left">
-              <div class="link-title">Apache License 2.0 (Full Text)</div>
+              <div class="link-title">Apache License 2.0</div>
               <div class="link-sub">Full license text referenced in Section A.3</div>
             </div>
             <div class="pill">OPEN</div>
@@ -350,14 +385,9 @@ For information on data practices, identifiers, consent controls, and user choic
 
 Support / Contact
 AFK GAMES STUDIO
-Support: afkgames.helpdesk@gmail.com</pre>
+Support: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5736313c30363a3224793f323b273332243c17303a363e3b7934383a">[email&#160;protected]</a></pre>
       </div>
 
       <footer>
         <div><strong>AFK GAMES STUDIO</strong></div>
-        <div>Contact: <a href="mailto:afkgames.helpdesk@gmail.com">afkgames.helpdesk@gmail.com</a></div>
-      </footer>
-    </div>
-  </div>
-</body>
-</html>
+        <div>Contact: <a h
