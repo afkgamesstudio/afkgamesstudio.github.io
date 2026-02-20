@@ -6,10 +6,10 @@
   <title>Third-Party Notices - XO Arcade: Infinity Edition | AFK GAMES STUDIO</title>
   <style>
     :root{
-      --primary:#1e3a8a;
-      --text-main:#111827;
-      --text-muted:#4b5563;
-      --bg-body:#ffffff;     /* white background for legibility */
+      --primary:#0f172a;   /* Navy/Slate */
+      --text:#111827;
+      --muted:#4b5563;
+      --bg:#ffffff;        /* White background for legibility */
       --surface:#f9fafb;
       --border:#e5e7eb;
       --highlight:#eff6ff;
@@ -18,55 +18,65 @@
     *{ box-sizing:border-box; }
     body{
       margin:0;
-      background:var(--bg-body);
-      color:var(--text-main);
+      background:var(--bg);
+      color:var(--text);
       font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      line-height:1.6;
+      line-height:1.65;
     }
     .wrap{
-      max-width: 900px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 56px 22px 80px;
+      padding: 60px 22px 80px;
     }
     .header{
       border-bottom: 4px solid var(--primary);
-      padding-bottom: 18px;
-      margin-bottom: 18px;
+      padding-bottom: 20px;
+      margin-bottom: 26px;
+      text-align: center;
     }
     h1{
       margin: 0 0 8px;
-      font-size: 1.75rem;
+      font-size: 2rem;
       letter-spacing: -0.02em;
       text-transform: uppercase;
       color: var(--primary);
       font-weight: 900;
     }
     .meta{
-      color: var(--text-muted);
-      font-size: .92rem;
+      color: var(--muted);
+      font-size: .9rem;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: .06em;
     }
-    .top-links{
-      margin: 16px 0 26px;
-      color: var(--text-muted);
-      font-size: .98rem;
-    }
-    .top-links a{
-      color: var(--link);
-      font-weight: 800;
-      text-decoration: none;
-    }
-    .top-links a:hover{ text-decoration: underline; }
-
     .card{
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 18px;
+      padding: 20px;
     }
+    .notice{
+      border: 2px solid var(--primary);
+      background: var(--highlight);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+    h2{
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      font-weight: 800;
+    }
+    p{ margin: 0 0 14px; color: var(--muted); }
+    a{ color: var(--link); font-weight: 700; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
 
+    /* Quick links panel */
     .quick{
       margin-top: 14px;
       padding: 14px;
@@ -81,6 +91,8 @@
       text-transform: uppercase;
       letter-spacing: .06em;
       font-weight: 900;
+      border-bottom: none;
+      padding-bottom: 0;
     }
     .link-list{
       display:flex;
@@ -106,7 +118,7 @@
     }
     .link-title{
       font-weight:900;
-      color:var(--text-main);
+      color:var(--text);
       line-height:1.2;
       white-space:nowrap;
       overflow:hidden;
@@ -114,7 +126,7 @@
     }
     .link-sub{
       font-size:0.86rem;
-      color:var(--text-muted);
+      color:var(--muted);
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
@@ -131,22 +143,29 @@
       flex:0 0 auto;
     }
 
-    /* Verbatim document block (1:1) */
+    /* Verbatim document block */
     .doc{
-      margin-top: 14px;
-      background:#ffffff;
+      margin: 0;
+      background: #ffffff;
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 18px;
-      color: var(--text-main);
+      color: var(--text);
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.92rem;
+      font-size: 0.86rem;
       line-height: 1.55;
-      white-space: pre-wrap;   /* preserve line breaks, allow wrapping */
-      word-break: break-word;  /* prevent overflow on long lines */
+      white-space: pre-wrap;
+      word-break: break-word;
     }
 
-    a{ color: var(--link); }
+    footer{
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: .9rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 
@@ -154,18 +173,15 @@
   <div class="wrap">
     <div class="header">
       <h1>Third-Party Notices</h1>
-      <div class="meta">XO Arcade: Infinity Edition | Last Updated: February 19, 2026</div>
-    </div>
-
-    <div class="top-links">
-      <a href="terms-of-use.html">Terms of Service</a>
-      &nbsp;•&nbsp;
-      <a href="privacy-policy.html">Privacy Policy</a>
-      &nbsp;•&nbsp;
-      <a href="third-party-notices.html">Third-Party Notices</a>
+      <div class="meta">XO Arcade: Infinity Edition | AFK GAMES STUDIO</div>
     </div>
 
     <div class="card">
+      <p>
+        This page provides the <strong>Third-Party Notices</strong> for <strong>XO Arcade: Infinity Edition</strong>,
+        developed by <strong>AFK GAMES STUDIO</strong> ("Studio").
+      </p>
+
       <div class="quick" aria-label="Quick links">
         <h2>Notices &amp; License Texts</h2>
         <div class="link-list">
@@ -211,8 +227,11 @@
         </div>
       </div>
 
-      <!-- 1:1 VERBATIM COPY (matches your offline TXT) -->
-      <pre class="doc">XO ARCADE: INFINITY EDITION — THIRD-PARTY NOTICES
+      <div class="notice">
+        <h2>Full Text (Unmodified)</h2>
+
+        <!-- 1:1 VERBATIM COPY (matches your offline TXT) -->
+        <pre class="doc">XO ARCADE: INFINITY EDITION — THIRD-PARTY NOTICES
 Version: 1.2
 Last Updated: February 19, 2026
 
@@ -334,6 +353,12 @@ For information on data practices, identifiers, consent controls, and user choic
 Support / Contact
 AFK GAMES STUDIO
 Support: afkgames.helpdesk@gmail.com</pre>
+      </div>
+
+      <footer>
+        <div><strong>AFK GAMES STUDIO</strong></div>
+        <div>Contact: <a href="mailto:afkgames.helpdesk@gmail.com">afkgames.helpdesk@gmail.com</a></div>
+      </footer>
     </div>
   </div>
 </body>
