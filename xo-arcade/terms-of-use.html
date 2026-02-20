@@ -5,98 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - XO Arcade | AFK GAMES STUDIO</title>
     <style>
-        :root {
-            /* BigLaw Professional Palette */
-            --primary: #0f172a;       /* Navy/Black header */
-            --text-main: #334155;     /* Dark Slate text */
-            --bg-body: #ffffff;       /* Pure White */
-            --border: #cbd5e1;        /* Subtle gray border */
-            --highlight: #f8fafc;     /* Very light gray for special boxes */
-            --link: #2563eb;          /* Standard link blue */
+        :root{
+            --primary:#0f172a;   /* Navy/Slate */
+            --text:#111827;
+            --muted:#4b5563;
+            --bg:#ffffff;        /* White background for legibility */
+            --surface:#f9fafb;
+            --border:#e5e7eb;
+            --highlight:#eff6ff;
+            --link:#2563eb;
         }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            max-width: 900px;
+        *{ box-sizing:border-box; }
+        body{
+            margin:0;
+            background:var(--bg);
+            color:var(--text);
+            font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height:1.65;
+        }
+        .wrap{
+            max-width: 980px;
             margin: 0 auto;
-            padding: 60px 25px;
-            background: var(--bg-body);
+            padding: 60px 22px 80px;
         }
-        .header {
+        .header{
             border-bottom: 4px solid var(--primary);
-            padding-bottom: 25px;
-            margin-bottom: 40px;
+            padding-bottom: 20px;
+            margin-bottom: 26px;
             text-align: center;
         }
-        h1 {
-            font-size: 2.2rem;
-            color: var(--primary);
-            text-transform: uppercase;
+        h1{
+            margin: 0 0 8px;
+            font-size: 2rem;
             letter-spacing: -0.02em;
-            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: var(--primary);
             font-weight: 900;
         }
-        .meta {
-            color: #64748b;
-            font-size: 0.95rem;
+        .meta{
+            color: var(--muted);
+            font-size: .9rem;
             text-transform: uppercase;
             font-weight: 700;
-            letter-spacing: 0.05em;
+            letter-spacing: .06em;
         }
-        h2 {
-            font-size: 1.2rem;
-            color: var(--primary);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 8px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            font-weight: 800;
+        .card{
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
         }
-        h3 {
-            font-size: 1rem;
-            color: var(--text-main);
-            margin-top: 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        p, li { margin-bottom: 12px; text-align: justify; }
-        ul { padding-left: 20px; }
-        
-        .caps-section {
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-        
-        .warning-box {
+        .notice{
             border: 2px solid var(--primary);
             background: var(--highlight);
-            padding: 25px;
-            margin: 30px 0;
+            border-radius: 12px;
+            padding: 18px;
+            margin-top: 18px;
+        }
+        h2{
+            margin: 0 0 12px;
+            font-size: 1.05rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            font-weight: 800;
+        }
+        p{ margin: 0 0 14px; color: var(--muted); }
+        a{ color: var(--link); font-weight: 700; text-decoration: none; }
+        a:hover{ text-decoration: underline; }
+
+        /* Legal text block */
+        .legal-text{
+            margin: 0;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            color: #111827;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 0.92rem;
+            line-height: 1.65;
+            white-space: pre-wrap;
+            word-break: break-word;
         }
 
-        a { color: var(--link); text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-
-        footer {
-            margin-top: 80px;
-            padding-top: 30px;
+        footer{
+            margin-top: 36px;
+            padding-top: 18px;
             border-top: 1px solid var(--border);
             text-align: center;
-            font-size: 0.85rem;
-            color: #64748b;
+            font-size: .9rem;
+            color: var(--muted);
         }
     </style>
 </head>
-<body>
-    <div class="header">
-        <h1>Terms of Service</h1>
-        <div class="meta">XO Arcade: Infinity Edition | Effective Date: February 19, 2026</div>
-    </div>
 
-<pre style="white-space:pre-wrap;word-wrap:break-word;font-family:inherit;margin:0;color:var(--text-main);line-height:1.6;">TERMS OF SERVICE
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Terms of Service</h1>
+            <div class="meta">XO Arcade: Infinity Edition | AFK GAMES STUDIO</div>
+        </div>
+
+        <div class="card">
+            <p>
+                This page provides the <strong>Terms of Service</strong> for <strong>XO Arcade: Infinity Edition</strong>,
+                developed by <strong>AFK GAMES STUDIO</strong> ("Studio").
+            </p>
+
+            <div class="notice">
+                <h2>Terms of Service (Full Text)</h2>
+
+                <pre class="legal-text">TERMS OF SERVICE
 XO ARCADE: INFINITY EDITION
 Effective Date: February 19, 2026
 Last Updated: February 19, 2026
@@ -170,10 +192,14 @@ The Studio may suspend or terminate your access to the App and this license at a
 12. CONTACT
 AFK GAMES STUDIO
 Email: afkgames.helpdesk@gmail.com</pre>
+            </div>
 
-    <footer>
-        &copy; 2026 AFK GAMES STUDIO. All rights reserved.<br>
-        Reference: <a href="../apache-2.0.html">Apache License 2.0</a>
-    </footer>
+            <footer>
+                <div><strong>AFK GAMES STUDIO</strong></div>
+                <div>Contact: <a href="mailto:afkgames.helpdesk@gmail.com">afkgames.helpdesk@gmail.com</a></div>
+                <div style="margin-top:8px;">Reference: <a href="apache-2.0.html">Apache License 2.0</a></div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
