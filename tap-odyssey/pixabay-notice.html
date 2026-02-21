@@ -23,72 +23,93 @@
       font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height:1.65;
     }
-    .wrap{ max-width:900px; margin:0 auto; padding:60px 22px 80px; }
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 22px 80px;
+    }
     .header{
-      border-bottom:4px solid var(--primary);
-      padding-bottom:20px;
-      margin-bottom:26px;
-      text-align:center;
+      border-bottom: 4px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 26px;
+      text-align: center;
     }
     h1{
-      margin:0 0 8px;
-      font-size:2rem;
-      letter-spacing:-0.02em;
-      text-transform:uppercase;
-      color:var(--primary);
-      font-weight:900;
+      margin: 0 0 8px;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 900;
     }
     .meta{
-      color:var(--muted);
-      font-size:.9rem;
-      text-transform:uppercase;
-      font-weight:700;
-      letter-spacing:.06em;
+      color: var(--muted);
+      font-size: .9rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .06em;
     }
     .card{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:20px;
-    }
-    .notice{
-      border:2px solid var(--primary);
-      background:var(--highlight);
-      border-radius:12px;
-      padding:18px;
-      margin-top:18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
     }
     h2{
-      margin:0 0 12px;
-      font-size:1.05rem;
-      color:var(--primary);
-      text-transform:uppercase;
-      letter-spacing:.06em;
-      border-bottom:1px solid var(--border);
-      padding-bottom:10px;
-      font-weight:800;
+      margin: 22px 0 10px;
+      font-size: 1.05rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      font-weight: 800;
     }
-    p{ margin:0 0 14px; color:var(--muted); }
-    ul{ margin:0 0 14px; padding-left:18px; color:var(--muted); }
-    li{ margin:6px 0; }
-    a{ color:var(--link); font-weight:700; text-decoration:none; }
-    a:hover{ text-decoration:underline; }
+    p{ margin: 0 0 14px; color: var(--muted); }
+    .notice{
+      border: 2px solid var(--primary);
+      background: var(--highlight);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+    a{ color: var(--link); font-weight: 700; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
     footer{
-      margin-top:36px;
-      padding-top:18px;
-      border-top:1px solid var(--border);
-      text-align:center;
-      font-size:.9rem;
-      color:var(--muted);
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: .9rem;
+      color: var(--muted);
     }
-    .label{
-      display:block;
-      margin-top:14px;
-      font-weight:800;
-      color:var(--text);
+    /* Navigation Bar */
+    .site-nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:center;
+      margin-bottom:26px;
+    }
+    .site-nav a{
+      display:inline-block;
+      padding:8px 18px;
+      font-size:.82rem;
+      font-weight:700;
       text-transform:uppercase;
-      letter-spacing:.06em;
-      font-size:.85rem;
+      letter-spacing:.05em;
+      text-decoration:none;
+      border-radius:8px;
+      border:1px solid var(--border);
+      color:var(--muted);
+      background:var(--surface, #f9fafb);
+      transition:background .2s,color .2s,border-color .2s;
+    }
+    .site-nav a:hover{
+      background:var(--highlight, #eff6ff);
+      color:var(--primary, #0f172a);
+      border-color:var(--primary, #0f172a);
+      text-decoration:none;
     }
   </style>
 </head>
@@ -99,78 +120,50 @@
       <div class="meta">Tap Odyssey | AFK GAMES STUDIO</div>
     </div>
 
+    <nav class="site-nav" aria-label="Site navigation">
+      <a href="../index.html">Homepage</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Service</a>
+      <a href="third-party-notices.html">Third-Party Notices</a>
+    </nav>
+
     <div class="card">
       <p>
-        This notice applies to <strong>Tap Odyssey</strong> (the “App”), developed by
-        <strong>AFK GAMES STUDIO</strong> (“Studio”).
+        This notice applies to <strong>Tap Odyssey</strong> (the "App"), developed by
+        <strong>AFK GAMES STUDIO</strong> ("Studio").
       </p>
 
       <div class="notice">
-        <h2>Pixabay — Third-Party Asset Notice (Sound Effects)</h2>
+<pre style="white-space:pre-wrap;word-wrap:break-word;font-family:inherit;margin:0;color:var(--muted);">PIXABAY — THIRD-PARTY ASSET NOTICE (SOUND EFFECTS)
+Last Updated: February 19, 2026
 
-        <p><span class="label" style="margin-top:0;">Last updated</span>February 14, 2026</p>
+The App includes certain sound effects obtained from Pixabay (pixabay.com) and incorporated into the App’s audiovisual experience (e.g., UI and gameplay SFX).
 
-        <span class="label">Summary</span>
-        <p>
-          The App includes certain sound effects obtained from <strong>Pixabay</strong> (pixabay.com) and incorporated into the App’s
-          audiovisual experience (e.g., UI and gameplay SFX).
-        </p>
+Service / source
+- Pixabay: https://pixabay.com
 
-        <span class="label">License / terms</span>
-        <p>
-          Pixabay content is made available under the <strong>Pixabay Content License</strong> and is subject to Pixabay’s applicable
-          terms and policies. In the event of any conflict between this notice and the applicable Pixabay license/terms,
-          <strong>Pixabay’s license/terms control</strong> with respect to the Pixabay content.
-        </p>
+Terms
+Pixabay content is made available under the Pixabay Content License and is subject to Pixabay’s applicable terms and policies. In the event of any conflict between this notice and the applicable Pixabay license/terms, Pixabay’s license/terms control with respect to the Pixabay content.
+- Pixabay Content License (Summary): https://pixabay.com/service/license-summary/
+- Pixabay Terms of Service: https://pixabay.com/service/terms/
 
-        <span class="label">Scope of use</span>
-        <p>
-          Pixabay sound effects are used <strong>only as integrated components</strong> of the App’s audiovisual experience. They are
-          <strong>not</strong> distributed as a standalone sound library, stock package, or as a substitute for the original content.
-        </p>
+Scope of use
+Pixabay sound effects are used only as integrated components of the App’s audiovisual experience. They are not distributed as a standalone sound library, stock package, or as a substitute for the original content.
 
-        <span class="label">Attribution</span>
-        <p>
-          Attribution is <strong>not stated as mandatory</strong> under the Pixabay Content License. This notice is provided for
-          <strong>provenance and compliance recordkeeping</strong>. Where available, the Studio maintains internal records for relevant
-          items (e.g., source page URLs, file names/IDs, and download evidence, including any available license certificates).
-        </p>
+Good-faith statement
+Certain Pixabay content may depict, include, or reference third-party rights (e.g., trademarks or other protected material). The Studio uses Pixabay sound effects in good faith under the applicable license and remains responsible for ensuring the App’s use of such content complies with applicable law and does not infringe third-party rights.
 
-        <span class="label">No endorsement; no support</span>
-        <p>
-          The App is not affiliated with, endorsed by, or sponsored by Pixabay. Pixabay does not provide warranties, support, or
-          maintenance for the App.
-        </p>
+Attribution
+Attribution is not stated as mandatory under the Pixabay Content License. This notice is provided for provenance and compliance recordkeeping. Where available, the Studio maintains internal records for relevant items (e.g., source page URLs, file names/IDs, and download evidence, including any available license certificates).
 
-        <span class="label">Third-party rights</span>
-        <p>
-          Certain Pixabay content may depict, include, or reference third-party rights (e.g., trademarks or other protected material).
-          The Studio uses Pixabay sound effects in good faith under the applicable license and does not claim endorsement by Pixabay or
-          any third party. The Studio remains responsible for ensuring the App’s use of such content complies with applicable law and
-          does not infringe third-party rights.
-        </p>
+No endorsement; no support
+The App is not affiliated with, endorsed by, or sponsored by Pixabay. Pixabay does not provide warranties, support, or maintenance for the App.
 
-        <span class="label">References</span>
-        <ul>
-          <li>
-            Pixabay Content License (Summary):
-            <a href="https://pixabay.com/service/license-summary/" target="_blank" rel="noopener noreferrer">
-              https://pixabay.com/service/license-summary/
-            </a>
-          </li>
-          <li>
-            Pixabay Terms of Service:
-            <a href="https://pixabay.com/service/terms/" target="_blank" rel="noopener noreferrer">
-              https://pixabay.com/service/terms/
-            </a>
-          </li>
-        </ul>
+Organization note
+File names may have been changed for internal organization; the audio content itself was not modified.
 
-        <span class="label">Contact</span>
-        <p style="margin-bottom:0;">
-          <strong>AFK GAMES STUDIO</strong><br />
-          Support: <a href="mailto:afkstudios.dev@gmail.com">afkstudios.dev@gmail.com</a>
-        </p>
+Recordkeeping
+This notice is provided for provenance and compliance recordkeeping.</pre>
       </div>
 
       <footer>
