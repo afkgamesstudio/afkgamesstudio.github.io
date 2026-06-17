@@ -478,7 +478,7 @@ This notice is based on the dependency list provided for the QR Decoder build us
 * Android Gradle Plugin: 9.2.1
 * Kotlin: 2.4.0
 * Compose BOM: 2026.05.01
-* CameraX: 1.6.3
+* CameraX: 1.6.1
 * ML Kit Barcode Scanning: 17.3.0
 * ML Kit Text Recognition: 16.0.1
 * Google Play services ML Kit Document Scanner: 16.0.0
